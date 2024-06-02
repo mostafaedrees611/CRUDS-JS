@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>CRUDS</h2>
+            <p>PRODUCT MANGMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="price">
+               <input onkeyup="gitTotal()" type="number" placeholder="price" id="price">
+               <input onkeyup="gitTotal()" type="number" placeholder="Taxes" id="Taxes">
+               <input onkeyup="gitTotal()" type="number" placeholder="ads" id="ads"> 
+               <input onkeyup="gitTotal()" type="number" placeholder="discount" id="discount">
+               <small id="total">Total</small>
+            </div>
+            <input type="number" placeholder="Count" id="Count">
+            <input type="number" placeholder="category" id="category">
+            <button id="submit">Create</button>
+        </div>
+        <div class="outputs"></div>
+        <div class="search">
+            <input type="text" placeholder="search" id="search">
+            <div class="button">
+                <button id="search title">search By title</button>
+                <button id="search category">search By category</button>
+
+            </div>
+            
+
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>Taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
